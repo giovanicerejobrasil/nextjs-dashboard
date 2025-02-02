@@ -1,3 +1,4 @@
+import { Sidebar } from "@/components/sidebar";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -33,6 +34,7 @@ export default function RootLayout({
           geistMono.variable
         )}
       >
+        <Sidebar />
         {children}
       </body>
     </html>
